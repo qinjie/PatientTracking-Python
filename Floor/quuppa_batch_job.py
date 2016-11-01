@@ -49,8 +49,8 @@ if __name__ == '__main__':
         # update file datetime to record last job timestamp
         try:
             data = {}
-            # r1 = query.dummy_list_tag_position()
-            r1 = query.list_tag_position()
+            r1 = query.dummy_list_tag_position()
+            # r1 = query.list_tag_position()
             if r1:
                 j = json.loads(r1)
                 ls = j['tags']
@@ -74,8 +74,8 @@ if __name__ == '__main__':
         while True:
             try:
                 data = {}
-                r1 = query.list_tag_info()
-                # r1 = query.dummy_list_tag_info()
+                # r1 = query.list_tag_info()
+                r1 = query.dummy_list_tag_info()
                 if r1:
                     j = json.loads(r1)
                     ls = j['tags']
@@ -98,5 +98,5 @@ if __name__ == '__main__':
 
     # call the function
     batch()
-    thread.start_new_thread(batchButton())
+    # thread.start_new_thread(batchButton())
 

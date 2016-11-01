@@ -25,10 +25,14 @@ class QuuppaQuery(Entity):
         self._urls['tag_position'] = self._url_quuppa + parser.get(self._config_section, 'tag_position')
 
     def dummy_list_tag_position(self, auth=None):
-        x1 = randint(-20, 20)
-        y1 = randint(-20, 20)
-        x2 = randint(-20, 20)
-        y2 = randint(-20, 20)
+        x1 = randint(1, 6)
+        y1 = randint(1, 6)
+        x2 = randint(1, 6)
+        y2 = randint(1, 6)
+        x3 = randint(1, 6)
+        y3 = randint(1, 6)
+        x4 = randint(1, 6)
+        y4 = randint(1, 6)
         t = """
             {
               "responseTS": 1409746066235,
@@ -44,7 +48,7 @@ class QuuppaQuery(Entity):
                     0.12,
                     0.16
                   ],
-                  "id": "001830ecece4",
+                  "id": "b4994c8bc62a",
                   "name": "Basket_010",
                   "position": [
                     """+str(x1)+""",
@@ -59,8 +63,8 @@ class QuuppaQuery(Entity):
                     0.8
                   ],
                   "zones": [{
-                    "id": \""""+str(randint(1, 7))+"""\",
-                    "name": "cashier"
+                    "id": "Wards B1R, Ward",
+                    "name": "Wards B1R, Ward"
                   }]
                 },
                 {
@@ -74,7 +78,7 @@ class QuuppaQuery(Entity):
                     -0.05,
                     0.76
                   ],
-                  "id": "001830ecf762",
+                  "id": "b4994c8bc93e",
                   "name": "Basket_042",
                   "position": [
                     """+str(x2)+""",
@@ -88,8 +92,66 @@ class QuuppaQuery(Entity):
                     -12.83,
                     0.8      ],
                   "zones": [{
-                    "id": \""""+str(randint(1, 14))+"""\",
-                    "name": "Bread"
+                    "id": "Wards B1R, Ward",
+                    "name": "Wards B1R, Ward"
+                  }]
+                },
+                {
+                  "areaId": "TrackingArea1",
+                  "areaName": "KCM",
+                  "color": "#0000FF",
+                  "coordinateSystemId": "CoordinateSystem1",
+                  "covarianceMatrix": [
+                    0.27,
+                    -0.05,
+                    -0.05,
+                    0.76
+                  ],
+                  "id": "b4994c8ba064",
+                  "name": "Basket_042",
+                  "position": [
+                    """+str(x3)+""",
+                    """+str(y3)+""",
+                    0.8
+                  ],
+                  "positionAccuracy": 0.88,
+                  "positionTS": 1409746057001,
+                  "smoothedPosition": [
+                    26.5,
+                    -12.83,
+                    0.8      ],
+                  "zones": [{
+                    "id": "Wards B1R, Ward",
+                    "name": "Wards B1R, Ward"
+                  }]
+                },
+                {
+                  "areaId": "TrackingArea1",
+                  "areaName": "KCM",
+                  "color": "#0000FF",
+                  "coordinateSystemId": "CoordinateSystem1",
+                  "covarianceMatrix": [
+                    0.27,
+                    -0.05,
+                    -0.05,
+                    0.76
+                  ],
+                  "id": "b4994c8778d0",
+                  "name": "Basket_042",
+                  "position": [
+                    """+str(x4)+""",
+                    """+str(y4)+""",
+                    0.8
+                  ],
+                  "positionAccuracy": 0.88,
+                  "positionTS": 1409746057001,
+                  "smoothedPosition": [
+                    26.5,
+                    -12.83,
+                    0.8      ],
+                  "zones": [{
+                    "id": "Wards B1R, Ward",
+                    "name": "Wards B1R, Ward"
                   }]
                 }
               ],
