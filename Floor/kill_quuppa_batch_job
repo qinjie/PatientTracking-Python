@@ -1,0 +1,1 @@
+killall -g quuppa_batch_job.py
