@@ -3,14 +3,14 @@ import requests
 import threading
 
 if __name__ == "__main__":
-    SEC = 5 #update per 5s
+    SEC = 3 #update per 3s
     # local = raw_input("Enter your localhost:")
     local = 'localhost'
-    ip = 'http://' + local + '/patient-tracking-web/api/web/user/alert'
+    ip = 'http://' + local + '/PatientTracking-Web/api/web/user/alert'
     print('Started')
     def batch():
         cnx = mysql.connector.connect(user='sa', password='abcd1234',
-                                      host='localhost:3',
+                                      host='localhost',
                                       database='patient_tracking')
         cursor = cnx.cursor()
         cursor.execute("""
