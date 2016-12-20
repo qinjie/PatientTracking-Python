@@ -19,8 +19,8 @@ Python application has reponsibility to check all the patient who have location 
 3. Install library for those python library: ```requests```, ```mysql```;
 4. Run: ```git clone https://github.com/qinjie/PatientTracking-Python```;
 5. Go to: ```PatientTracking-Python/Server```;
-6. Config database, loop time, PatientTracking-Web address in main.py;
-![Config Image](https://github.com/qinjie/PatientTracking-Python/config_server.png)
+6. Config database, loop time, PatientTracking-Web address in main.py;<br>
+![Config Image](https://github.com/qinjie/PatientTracking-Python/blob/master/config_server.png)
 7. Run: python main.py.
 
 
