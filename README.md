@@ -28,6 +28,8 @@ Python application has reponsibility to check all the patient who have location 
 
 Python application is running in Floor which has responsibility to collect data from Quuppa locators and sends it to [Server](https://github.com/qinjie/PatientTracking-Web)
 
+### Instruction
+
 1. Recommend to go to Desktop;
 2. Run: ```git clone https://github.com/qinjie/PatientTracking-Python```;
 3. Go to: ```PatientTracking-Python/Floor```;
