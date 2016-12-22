@@ -35,5 +35,5 @@ Python application is running in Floor which has responsibility to collect data 
 3. Go to: ```PatientTracking-Python/Floor```;
 4. Config server address in: ```server.ini``` file:
     + ```url_base```: Web API address;
-    + ```url_quuppa```: Quuppa server address;
+    + ```url_quuppa```: Quuppa server address (Usually is localhost);
 5. Run: ```python3 quuppa_batch_job.py``` or ```python quuppa_batch_job.py```, to sends data to server.
